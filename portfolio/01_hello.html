@@ -10,7 +10,7 @@
 
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENT TODO Website</title>
+    <title>Seoyoung Jung's Website</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -69,37 +69,58 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p>
+            Hello Quad is an OpenGL graphics demo created for CS250 Computer Graphics II.
+            The purpose of this assignment was to build the foundational rendering features
+            needed to display a textured quad and animate it using shader-based logic.
+            The project focuses on understanding the basic OpenGL rendering pipeline,
+            including vertex buffers, index buffers, vertex arrays, textures, and shaders.
+        </p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Implemented the core OpenGL rendering classes: IndexBuffer, VertexBuffer, VertexArray, and Texture.</li>
+            <li>Used the provided GL wrapper functions instead of calling OpenGL functions directly.</li>
+            <li>Created a custom texture by replacing paint_me.png with my own drawing.</li>
+            <li>Added vertex shader animation using elapsed time from window/Environment.hpp.</li>
+            <li>Implemented time-based rotation and scaling for the quad in the vertex shader.</li>
+            <li>Added fragment shader animation that cycles between the texture color and the quad's vertex colors.</li>
+            <li>Built and tested the project for both Windows and Web platforms.</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>
+            Through this assignment, I was able to learn the beginning steps of 3D graphics programming,
+            which made the project especially exciting for me. At first, the most challenging part was
+            understanding the overall process of how 3D graphics are rendered, from sending data to the GPU
+            to using shaders to create the final image on the screen.
+        </p>
+        <p>
+            Although this process felt difficult in the beginning, it became much more interesting and enjoyable
+            once I started to understand how vertex data, index data, textures, and shaders work together.
+            I also learned how to send time-based data from C++ to GLSL shaders and use it to control both
+            vertex movement and fragment color animation. This assignment helped me build a stronger foundation
+            for future graphics programming projects.
+        </p>
     </div>
 
     <div class="portfolio-item-individual">
         <h2>Demo</h2>
-        <!-- TODO demo the webgl version of the project -->
         <iframe id="demo" src="../webgl/D01HelloQuad/graphics_fun.html"></iframe>
     </div>
 
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <a href="mailto:seoyoung.jung@digipen.edu" class="footer__link">seoyoung.jung@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://www.linkedin.com/in/seoyoung-jung0/">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/seoyoung-jung">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
