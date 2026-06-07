@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="../img/face.jpg">
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STUDENT TODO Website</title>
+    <title>Seoyoung Jung's Website</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -68,17 +68,28 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p>
+        This project implements 3D Gradient Noise in GLSL to create seamless procedural textures.
+        The main goal was to generate Improved Perlin Noise directly on the GPU using shader programs.
+        The generated noise can be displayed as a 2D texture slice with adjustable tiling and Z input.
+        It can also be used to displace a plane mesh, creating a terrain-like surface visualization.</p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Added and registered the Gradient Noise demo in the project framework.</li>
+            <li>Extended the texture system to support RGBA8, RGBA32F, and R32F color formats.</li>
+            <li>Updated the framebuffer system so color attachments can be created with configurable formats.</li>
+            <li>Implemented Improved 3D Perlin Gradient Noise in GLSL using a fixed permutation table and 12 gradient directions.</li>
+            <li>Created multiple procedural patterns, including plain gradient noise, fractal sum, turbulence, marble, and wood.</li>
+            <li>Generated noise into an offscreen R32F framebuffer and displayed it as a tiled texture.</li>
+            <li>Created a surface visualization by displacing a plane mesh using the generated noise texture.</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>
+        This assignment helped me better understand GPU-based procedural texture generation,
+        framebuffer rendering, and shader uniform management. One challenge was keeping the shader
+        files and uniform types organized correctly for each demo.</p>
     </div>
 
     <div class="portfolio-item-individual">
@@ -88,15 +99,15 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:my.email@digipen.edu" class="footer__link">my.email@digipen.edu</a>
+        <a href="mailto:seoyoung.jung@digipen.edu" class="footer__link">seoyoung.jung@digipen.edu</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/mylinkedinid">
+                <a class="social-list__link" href="https://www.linkedin.com/in/seoyoung-jung0/">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/mygithubid">
+                <a class="social-list__link" href="https://github.com/seoyoung-jung">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
